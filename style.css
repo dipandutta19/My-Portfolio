@@ -51,11 +51,14 @@ nav ul li a:hover {
 
 .home-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem; /* Reduced gap between image and details */
-    padding: 1rem 15rem; /* Reduced inner padding */
+    flex-direction: column; /* Stack image and details vertically on smaller screens */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    gap: 0.5rem; /* Space between the image and details */
+    padding: 1rem 0rem; /* Padding for top and bottom */
+    text-align: center; /* Center-aligns text content */
 }
+
 
 .home-image img {
     width: 300px;
@@ -100,6 +103,7 @@ nav ul li a:hover {
     display: flex;
     gap: 15px; /* Space between links */
     margin-top: 1rem; /* Space above the social links */
+    justify-content: center;
 }
 
 .social-links a {
@@ -144,11 +148,26 @@ nav ul li a:hover {
 .about p {
     font-size: 1.1rem;
     line-height: 1.8;
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 auto;
     text-align: justify;
+    margin-bottom: 1rem;
 }
 
+.btn {
+    background-color: #ff7f50; /* Button background */
+    color: white; /* Button text color */
+    padding: 0.8rem 1.5rem; /* Padding inside button */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Bold text */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.btn:hover {
+    background-color: #e66f40; /* Darker blue on hover */
+}
 /* Projects Section */
 
 .projects {
